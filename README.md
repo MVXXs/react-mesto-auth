@@ -20,4 +20,4 @@
 
 ## GitHub-pages
 
-https://mvxxs.github.io/mesto-react/
+https://mvxxs.github.io/react-mesto-auth/
