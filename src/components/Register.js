@@ -2,21 +2,21 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Register(props) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-  function handleEmailInput(evt) {
-    setEmail(evt.target.value);
-  }
+    function handleEmailInput(evt) {
+        setEmail(evt.target.value);
+    }
 
-  function handlePasswordInput(evt) {
-    setPassword(evt.target.value);
-  }
+    function handlePasswordInput(evt) {
+        setPassword(evt.target.value);
+    } 
 
-  function handleSubmit(evt) {
-    evt.preventDefault();
-    props.onRegister(password, email);
-  }
+    function handleSubmit(evt) {
+        evt.preventDefault();
+        props.onRegister(password, email);
+    }
 
    return (
     <div className="auth auth_register" >
